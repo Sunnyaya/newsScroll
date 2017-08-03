@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		
+			.tui_news_lists{
+				height: 30px;
+				line-height: 30px;
+				overflow: hidden;
+				border: 1px solid #dcdcdc;
+			}
+			.tui_news_lists ul{
+				padding-left: 10px;
+				margin-top: 0;
+			}
+			.tui_news_lists li{
+				height: 30px;
+				line-height: 30px;
+				width: 100%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				list-style: none;
+			}
+			.tui_news_lists li a{
+				text-decoration: none;
+				font-size: 14px;
+				color: #333;
+			}
+		</style>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/newsScroll.js"></script>
+		
+		<script>
+		$(function(){
+			$(".tui_news_lists").newsScroll({
+				"hoverstop":true,
+				"spacetime":2000
+			});
+		})
+		</script>
+	</head>
+	<body>
+		<div class="tui_news_lists">
+			<ul>
+				<li><a href="###">共享单车新规发布:禁止向未满12岁儿童提供服务</a></li>
+				<li><a href="###">人民日报刊文谈反转新闻：不少大V频频被打脸</a></li>
+				<li><a href="###">专家详解北京为何雨量分布不均 今起闷热回归</a></li>
+				<li><a href="###">美士兵失踪案搅局南海 在这一海域连连“丢人”</a></li>
+				<li><a href="###">从魏则西到李文星 互联网企业不负责坑害多少人</a></li>
+				<li><a href="###">建军大业里的这些人历史书没写 但同样举足轻重</a></li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
